@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+</head>
+<body>
+    
+    
+        <script>
+            const destination = new URL('https://www.financeads.net/tc.php?t=32210C270652780T&subid=gskj');
+            const current = new URL(window.location);
+
+            if (current.search.length > 0) {
+                if (current.searchParams.has('tracking_id')) {
+                    destination.searchParams.set('tracking_id', current.searchParams.get('tracking_id'));
+                }
+
+                if (current.searchParams.has('tracking_type')) {
+                    destination.searchParams.set('tracking_type', current.searchParams.get('tracking_type'));
+                }
+
+                if (current.searchParams.has('subid')) {
+                    destination.searchParams.set('subid', current.searchParams.get('subid'));
+                }
+            }
+
+            window.location.replace(destination.href);
+        </script>
+    
+</body>
+</html>
